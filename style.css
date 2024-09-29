@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    height: 70vh;
+    /* width: 100%; */
+    background-image: url(images/intro-00.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main .box {
+    position: absolute;
+    height: 70vh;
+    opacity: 0.7;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    height: 40px;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.language,
+.sign-in {
+    padding: 6px;
+    font-size: 15px;
+}
+
+.language {
+    display: flex;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.sign-in {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content {
+    height: calc(100% - 62px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 30px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    top: 0;
+}
+
+.content> :nth-child(1) {
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.content> :nth-child(2) {
+    font-size: 25px;
+    text-align: center;
+}
+
+.content> :nth-child(3) {
+    font-size: 20px;
+    text-align: center;
+}
+
+.mail {
+    display: flex;
+    gap: 10px;
+}
+
+.mail input {
+    background-color: black;
+    opacity: 0.7;
+    width: 300px;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+::placeholder {
+    color: white;
+}
+
+.mail button {
+    background-color: rgb(229, 9, 20);
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    font-weight: 700;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+hr {
+    border: 5px solid rgb(35, 35, 35);
+}
+
+.first {
+    margin: auto;
+    max-width: 70vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 45px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 1000;
+}
+
+.subheading {
+    font-size: 25px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.image img {
+    position: relative;
+    top: 0;
+}
+
+.image video {
+    position: absolute;
+    top: 14vh;
+    right: 4.5vw;
+    z-index: -1;
+}
+
+.second {
+    flex-direction: row-reverse;
+    max-width: 70vw;
+}
+
+.floating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    top: 350px;
+    left: 145px;
+    background-color: black;
+    width: 350px;
+    height: 100px;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 10px;
+
+}
+
+.image2 {
+    position: relative;
+}
+
+.floating> :first-child {
+    height: 80%;
+    padding: 5px;
+
+    width: fit-content;
+    object-fit: scale-down;
+}
+
+.floating :nth-child(3) {
+    height: 50px;
+}
+
+.context {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin-right: 65px;
+}
+
+.context> :first-child {
+    font-weight: 900;
+    padding-bottom: 3px;
+}
+
+.context> :last-child {
+    color: rgb(0, 102, 255);
+}
+
+.third {
+    max-width: 70vw;
+}
+
+.fourth {
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+.fifth {
+    text-align: center;
+    max-width: 70vw;
+    margin: auto;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.fifth>h1 {
+    font-size: 40px;
+    font-weight: 1000;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.questions {
+    background-color: rgb(50, 50, 50);
+    height: 75px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.65s ease;
+}
+
+.questions>img {
+    height: 35px;
+    margin: 15px;
+}
+
+.questions>p {
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.questions:hover {
+    background-color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.readytowatch {
+    margin: 20px;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+footer {
+    max-width: 70vw;
+    margin: auto;
+    opacity: 0.8;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+footer>p {
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+footer>p>span {
+    text-decoration: underline;
+}
+
+footer>p>span:hover {
+    cursor: pointer;
+}
+
+footer>div {
+    display: grid;
+    grid-template-areas: "1 2 3 4";
+    /* text-align: center; */
+}
+
+footer>div p {
+    padding: 7px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+footer>div p:hover {
+    cursor: pointer;
+}
+
+footer>button {
+    margin: 50px 0;
+}
+
+.companyName {
+    height: 75px;
+    padding-bottom: 50px;
+}
+
+.companyName>p {
+    text-decoration: none;
+}
+
+.companyName>p:hover {
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        height: 25px;
+    }
+
+    .language p {
+        display: none;
+    }
+
+    nav {
+        /* padding: 5px; */
+        justify-content: space-around;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    .language,
+    .sign-in {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .content {
+        gap: 10px;
+        height: calc(100% - 50px);
+    }
+
+    .content> :nth-child(1) {
+        font-size: 30px;
+        font-weight: 1000;
+        padding: 10px;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .content> :nth-child(3) {
+        font-size: 18px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .mail span {
+        width: 50vmin;
+    }
+
+    .main span input {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .mail button {
+        font-size: 15px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .first {
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .subheading {
+        font-size: 15px;
+    }
+
+    .first {
+        height: 70vh;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 275px;
+        height: 215px;
+    }
+
+    .image video {
+        position: absolute;
+        top: 240px;
+        width: 250px;
+        /* margin: 20px; */
+        margin-top: 5px;
+    }
+
+    .image2>img {
+        width: 100%
+    }
+
+    .floating {
+        width: 70%;
+        height: 50px;
+        top: auto;
+        left: 20%;
+        justify-content: flex-start;
+    }
+
+    .context {
+        font-size: 10px;
+    }
+
+    .floating :nth-child(3) {
+        position: absolute;
+        height: 40px;
+        right: 0;
+    }
+
+    .fifth>div {
+        justify-content: space-between;
+        padding: 5px;
+        text-align: start;
+    }
+
+    .fifth>div>p {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    footer>div {
+        grid-template-areas: "1 2";
+        padding: 5px;
+    }
+
+    .fifth>div>img{
+        height: 20px;
+    }
+
+    .fifth > h1{
+        font-size: 30px;
+    }
+
+}
