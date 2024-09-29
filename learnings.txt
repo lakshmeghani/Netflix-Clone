@@ -1,8 +1,7 @@
-1. Whenver we keep background images and display content over them, if we want the image to be fader in terms of opacity, then by decreasing the opacity of the container, then all the items' opacity and appearance is affected.
---> To solve this issue, we take a div in between container and items and set background color to black and change the z-index of items to apper ahead.
+1. Whenever we keep background images and display content over them, if we want the image to be fader in terms of opacity, then by decreasing the opacity of the container, then all the items' opacity and appearance are affected.
+--> To solve this issue, we take a div in between the container and items set the background color to black, and change the z-index of items to appear ahead.
 
 *Just Keep the '.box' div outside any content and just use it as a filter! Any content inside .box is messed up with opacity!!*
 
 
-2. Always try to bind videos and put it onto the website!!!!!!
-Always do it!!!!! While making responsive, it will make your life simpler!!!!!
+2. Always try to bind videos and put them onto the website.
